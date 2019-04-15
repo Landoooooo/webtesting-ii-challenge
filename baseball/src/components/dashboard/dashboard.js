@@ -1,12 +1,14 @@
 import React from 'react'
 
 const Dashboard = props => {
+
+    const {strike, ball, foul, hit} = props
     return(
         <div>
-            <button onClick={() => props.strike()}>Strikes!</button>
-            <button onClick={() => props.ball()}>Ball!</button>
-            <button onClick={() => props.foul()}>Foul!</button>
-            <button onClick={() => props.hit()}>Hit!</button>
+            <button onClick={strike}>Strike!</button>
+            <button onClick={ball}>Ball!</button>
+            <button onClick={foul}>Foul!</button>
+            <button onClick={hit}>Hit!</button>
         </div>
     )
 }
